@@ -1,0 +1,2208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="compras.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="imginicio/logobusqueda.jpg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <title>NUESTROS PRODUCTOS</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2F3Z0336Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-X2F3Z0336Z');
+    </script>
+    <!-- Google Analytics -->
+    <!-- Google Tag Manager -->
+
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TV2M77S');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta name="google-site-verification" content="aX_J4K7e3Km32tkkmcrwEhqbBqrCv_jkGEWeV8rTBXA" />
+
+    <style>
+        p.producto-precio {
+            font-family: "Comfortaa", sans-serif;
+            color: #212529;
+            line-height: 25px;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .tablink {
+
+            box-sizing: border-box;
+            color: rgb(119, 119, 119);
+            font-family: Poppins, sans-serif;
+            font-size: 13.6px;
+            font-weight: 400;
+
+            text-decoration: none;
+            background-color: #ffffff;
+        }
+
+        .tablink1:hover {
+
+            color: #ffffff;
+        }
+
+        .tablink1,
+        .tablink2 {
+
+            box-sizing: border-box;
+            color: rgb(119, 119, 119);
+            font-family: Poppins, sans-serif;
+            font-size: 13.6px;
+            font-weight: 400;
+
+            text-decoration: none;
+            background-color: #ffffff;
+        }
+
+        #portal {
+            display: none;
+        }
+
+        .up-button {
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 50%;
+            background-color: #00396e;
+            cursor: pointer;
+            position: fixed;
+            /* Fijo en la pantalla */
+            bottom: 20px;
+            /* Distancia desde abajo */
+            right: 30px;
+            /* Distancia desde la derecha */
+            transition: transform 0.3s, background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            /* Asegura que esté por encima de otros elementos */
+        }
+
+        .up-button:hover {
+            background-color: #00396e;
+            transform: translateY(-5px);
+        }
+
+        .up-button:active {
+            transform: translateY(0px);
+        }
+
+        .arrow {
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 6px;
+            transform: rotate(-135deg);
+            animation: bounce 2s infinite;
+        }
+
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: rotate(-135deg) translateY(0);
+            }
+
+            40% {
+                transform: rotate(-135deg) translateY(-5px);
+            }
+
+            60% {
+                transform: rotate(-135deg) translateY(-3px);
+            }
+        }
+
+        #cuadroingreso {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            position: absolute;
+            top: 20%;
+            left: 36.5%;
+        }
+
+        @media screen and (max-width:800px) {
+            #portal {
+                display: block;
+            }
+
+            #cuadroingreso {
+
+                width: 75%;
+
+                top: 25%;
+                left: 0;
+            }
+        }
+    </style>
+    <style>
+        .tablink {
+            box-sizing: border-box;
+            color: rgb(119, 119, 119);
+            font-family: Poppins, sans-serif;
+            font-size: 13.6px;
+            font-weight: 400;
+            text-decoration: none;
+            background-color: #ffffff;
+        }
+
+        #error-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 20%;
+            font-size: 1.5em;
+        }
+
+        #contenido-verificado,
+        #contenido-sin-verificar {
+            display: none;
+        }
+
+        #formulario-codigo {
+            padding-top: 20px;
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (localStorage.getItem("verificado") === "true") {
+                document.getElementById("contenido-verificado").style.display = "block";
+                document.getElementById("formulario-codigo").style.display = "none";
+            }
+        });
+
+        function verificarCodigo() {
+            const codigo = document.getElementById('codigoAcceso').value;
+            fetch(`verificar_acceso.php?codigo=${codigo}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.acceso) {
+                        localStorage.setItem("verificado", "true");
+                        document.getElementById('contenido-verificado').style.display = 'block';
+                        document.getElementById('error-overlay1').style.display = 'none';
+                        document.getElementById('formulario-codigo').style.display = 'none';
+                    } else {
+                        document.getElementById('error-overlay1').style.display = 'block';
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        }
+
+        function mostrarSinVerificar() {
+            document.getElementById('contenido-sin-verificar').style.display = 'block';
+            document.getElementById('formulario-codigo').style.display = 'none';
+            document.getElementById('error-overlay1').style.display = 'none';
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div id="error-overlay1">
+        No tienes permiso para ver esta página. Contacta con el soporte.
+    </div>
+
+    <div id="formulario-codigo">
+        <div class="opaco">
+            <header>
+
+                <input type="checkbox" id="btn-menuencabezado">
+                <label for="btn-menuencabezado"><img src="imginicio/icons8-menu-60.png" alt="" width="30px">
+                </label><img src="imginicio/logosas.png" alt="" class="logosas" llammar>
+
+                <nav class="menuencabezado">
+
+                    <div class="videodescripcion4">
+                        <ul>
+
+                            <img src="imginicio/logosas.png" alt="" class="logo" llammar>
+                            <div class="telefono"><i class="fa fa-microphone"></i> LLAMANOS <a
+                                    style="text-decoration: none; color: rgb(119, 119, 119);" href="tel:+6044444711">
+                                    (604) 444 4711 </a>- 3009121246 <a href="registro.php"><button class="compra"><i
+                                            class="fa fa-solid fa-money-bill"></i> Paga </button></a></div>
+                            <li class="dropdown">
+                                <a href="index.html" class="active"><i class="fas fa-home"></i> INICIO</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="comprar.html" class="dropbtn"><i class="fas fa-sharp fa-solid fa-store"></i>
+                                    PRODUCTOS <a href="#" style="float: right;" id="portal"><i
+                                            class='fas fa-angle-down'></i></a></a>
+                                <div class="dropdown-content">
+                                    <div class="NUEVOLISTADO">
+
+                                        <button class="tablink2" id="tablink2"
+                                            onclick="abrirCategoria2(event, 'Cepillos')" id="defaultOpen2">CEPILLO
+                                            DENTAL</button>
+                                        <button class="tablink2" id="tablink2"
+                                            onclick="abrirCategoria2(event, 'Sedas')">SEDA DENTAL</button>
+                                        <button class="tablink2" id="tablink2"
+                                            onclick="abrirCategoria2(event, 'Kit')">KIT VIAJERO</button>
+                                        <button class="tablink2" id="tablink2"
+                                            onclick="abrirCategoria2(event, 'Cremas')">CREMA DENTAL</button>
+                                        <button class="tablink2" id="tablink2"
+                                            onclick="abrirCategoria2(event, 'Enjuagues')">ENJUAGE BUCAL</button>
+                                        <button class="tablink2" id="tablink2"
+                                            onclick="abrirCategoria2(event, 'Ortodoncia')">ORTODONCIA</button>
+                                        <button class="tablink2" id="tablink2"
+                                            onclick="abrirCategoria2(event, 'Universo')">UNIVERSO DE LOS NIÑOS</button>
+
+
+
+                                    </div>
+                                </div>
+                            <li class="dropdown"><a href="http://sky-teeth.com" class="active"><i
+                                        class="fas fa-sharp fa-solid fa-building"></i> SKY-TEETH</a></li>
+                            <li class="dropdown"><a href="mayoristahtml/mayorista.html" class="active"
+                                    target=" _blank "><i class="fas fa-sharp fa-solid fa-tooth"></i> MAYORISTA</a></li>
+                            <li class="dropdown"><a href="quienessomos.html" class="active"><i
+                                        class="fas fa-sharp fa-solid fa-users"></i> QUIENES SOMOS</a></li>
+                            <li class="dropdown">
+                                <a href="contactenos.html" class="active"><i class="fas fa-solid fa-phone"
+                                        style=" transform: scaleX(-1);"></i> CONTACTENOS <a href="#"
+                                        style="float: right;" id="portal"><i class='fas fa-angle-down'></i></a></a>
+                                <div class="dropdown-content">
+                                    <a href="https://capacitacionesplus.jimdofree.com/" target="_blank">Academia</a>
+                                    <a href="empleo.html">Trabaja con nosotros</a>
+                                    <a href="https://forms.gle/iiKwCxTXgCL2CkR4A">PQRS</a>
+                                    <a href="cliente.php" target="_blank">PORTAL AUTOGESTION</a>
+
+
+                                </div>
+                            </li>
+                            <li class="dropdown" id="portal">
+                                <a href="cliente.php" class="active">
+                                    <i class="fas fa-solid fa-clipboard"></i> PORTAL AUTOGESTION</a>
+                            </li>
+
+                            <div class="redes">
+
+
+
+                                <a href="https://www.facebook.com/oralpluscol/">
+                                    <img src="imginicio/icons9-facebook.gif" alt="" width="35px" height="35px"
+                                        style="margin-top: 6%;"></a>
+                                <a href="https://www.youtube.com/channel/UCX-NMQveLomTmNPBkZzjHkw">
+                                    <img src="imginicio/icons9-youtube.gif" alt="" width="35px" height="35px"
+                                        style="margin-top: 6%;"></a>
+                                <a href="https://www.instagram.com/oralplus_colombia/">
+                                    <img src="imginicio/icons8-instagram.gif" alt="" width="35px" height="35px"
+                                        style="margin-top: 6%;"></a>
+                                <a href="ABCdelcuidadooralinfantil.html">
+                                    <img src="imginicio/icons8-blogger-200.png" alt="" width="35px" height="35px"
+                                        style="margin-top: 6%;"></a>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <style>
+                .negro {
+                    background-color: #1c1c1c;
+                    width: 100%;
+                    padding: 10px 0;
+                }
+
+                .productos {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    text-align: center;
+                    position: relative;
+                }
+
+                .tituloproducto {
+                    color: #ffffff;
+                    font-family: Arial, sans-serif;
+                    font-size: 36px;
+                    font-weight: 600;
+                    letter-spacing: 1.5px;
+                    text-transform: uppercase;
+                    margin: 0;
+                    padding: 20px 0;
+                    position: relative;
+                    animation: fadeInUp 0.8s ease-out forwards;
+                }
+
+                .tituloproducto::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 60px;
+                    height: 3px;
+                    background-color: #007bff;
+                    margin-top: 10px;
+                }
+
+                /* Animation */
+                @keyframes fadeInUp {
+                    from {
+                        opacity: 0;
+                        transform: translateY(20px);
+                    }
+
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            </style>
+
+            <div class="negro">
+                <div class="productos">
+                    <h2 class="tituloproducto">Nuestros Productos</h2>
+                </div>
+            </div>
+
+            <center>
+                <!-- Pestañas de categorías -->
+                <div class="tabs">
+                    <button class="tablink2" onclick="abrirCategoria2(event, 'Cepillos2')" id="defaultOpen2">CEPILLO
+                        DENTAL</button>
+                    <button class="tablink2" onclick="abrirCategoria2(event, 'Sedas2')">SEDA DENTAL</button>
+                    <button class="tablink2" onclick="abrirCategoria2(event, 'Kit2')">KIT VIAJERO</button>
+                    <button class="tablink2" onclick="abrirCategoria2(event, 'Cremas2')">CREMA DENTAL</button>
+                    <button class="tablink2" onclick="abrirCategoria2(event, 'Enjuagues2')">ENJUAGE BUCAL</button>
+                    <button class="tablink2" onclick="abrirCategoria2(event, 'Ortodoncia2')">ORTODONCIA</button>
+                    <button class="tablink2" onclick="abrirCategoria2(event, 'Universo2')">UNIVERSO DE LOS
+                        NIÑOS</button>
+
+                </div>
+
+            </center>
+            <div id="productos2" class="contenedor2">
+                <div id="Cepillos2" class="tabcontent2 grid"></div>
+                <div id="Sedas2" class="tabcontent2 grid" style="display:none;"></div>
+                <div id="Kit2" class="tabcontent2 grid" style="display:none;"></div>
+                <div id="Cremas2" class="tabcontent2 grid" style="display:none;"></div>
+                <div id="Enjuagues2" class="tabcontent2 grid" style="display:none;"></div>
+                <div id="Ortodoncia2" class="tabcontent2 grid" style="display:none;"></div>
+                <div id="Universo2" class="tabcontent2 grid" style="display:none;"></div>
+            </div>
+            <script src="comprasinicio.js"></script>
+        </div>
+        </center>
+        <center>
+            <div id="overlay" style="
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        ">
+            <div id="cuadroingreso" style="
+                max-width: 400px;
+                margin: 20px ;
+                padding: 30px;
+                background-color: #ffffff;
+                border-radius: 15px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+                text-align: center;
+                font-family: Arial, sans-serif;
+            ">
+                <img src="imginicio/logosas.png" alt="" class="logo1" style="margin-left: 15px;">
+        
+                <label for="codigoAcceso" style="
+                    display: block;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    color: #374151;
+                ">Ingresa tu código para empezar a comprar:</label>
+        
+                <input type="text" id="codigoAcceso" style="
+                    width: 100%;
+                    padding: 12px;
+                    border: 2px solid #2563eb;
+                    border-radius: 8px;
+                    font-size: 16px;
+                    outline: none;
+                    transition: all 0.3s ease;
+                    margin-bottom: 20px;
+                    box-sizing: border-box;
+                " onfocus="this.style.boxShadow='0 0 0 3px rgba(37, 99, 235, 0.2)'" onblur="this.style.boxShadow='none'">
+        
+                <button onclick="verificarCodigo()" style="
+                    width: 100%;
+                    padding: 12px;
+                    background-color: #2563eb;
+                    color: #ffffff;
+                    border: none;
+                    border-radius: 8px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                    margin-bottom: 10px;
+                " onmouseover="this.style.backgroundColor='#1d4ed8'"
+                    onmouseout="this.style.backgroundColor='#2563eb'">Comenzar</button>
+        
+                <button onclick="mostrarSinVerificar()" style="
+                    width: 100%;
+                    padding: 12px;
+                    background-color: #ffffff;
+                    color: #2563eb;
+                    border: 2px solid #2563eb;
+                    border-radius: 8px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                " onmouseover="this.style.backgroundColor='#eff6ff'" onmouseout="this.style.backgroundColor='#ffffff'">Solo
+                    ver catálogo</button>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    </center>
+
+
+
+
+
+
+
+
+
+
+    <!-- Contenido que se muestra después de la verificación exitosa -->
+    <div id="contenido-verificado">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TV2M77S" height="0" width="0"
+                style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) --> <!-- Google Tag Manager (noscript) -->
+
+        <!-- End Google Tag Manager (noscript) -->
+        <!--ENCABEZADO-->
+
+        <header>
+            <input type="checkbox" id="btn-menuencabezado1">
+            <label for="btn-menuencabezado1"><img src="imginicio/icons8-menu-60.png" alt="" width="30px">
+            </label><img src="imginicio/logosas.png" alt="" class="logosas" llammar>
+
+            <nav class="menuencabezado1">
+
+                <div class="videodescripcion4">
+                    <ul>
+
+                        <img src="imginicio/logosas.png" alt="" class="logo" llammar>
+                        <div class="telefono"><i class="fa fa-microphone"></i> LLAMANOS <a
+                                style="text-decoration: none; color: rgb(119, 119, 119);" href="tel:+6044444711"> (604)
+                                444 4711 </a>- 3009121246
+                            <button onclick="mostrarCarrito()" class="cart-view-btn">
+                                <i class="fa fa-shopping-cart"></i></i> Ver Carrito (<span
+                                    id="contador-carrito">0</span>)
+                            </button>
+
+
+                            <script>
+                                function cerrarSesion() {
+                                    localStorage.removeItem("verificado");
+                                    location.reload();
+                                }
+                            </script>
+
+
+                            <style>
+                                .cart-view-btn {
+                                    background-color: #004C97;
+                                    color: white;
+                                }
+
+                                .cart-view-btn,
+                                .compra,
+                                button[onclick="cerrarSesion()"] {
+                                    background-color: #004C97;
+                                    color: white;
+                                }
+
+                                .fa-microphone {
+                                    display: inline-block;
+                                    animation: salto 3s infinite ease-in-out;
+                                }
+
+                                @keyframes salto {
+                                    0% {
+                                        transform: translateY(0);
+                                    }
+
+                                    10% {
+                                        transform: translateY(-5px);
+                                    }
+
+                                    /* Sube ligeramente */
+                                    20% {
+                                        transform: translateY(0);
+                                    }
+
+                                    /* Vuelve a su posición */
+                                    100% {
+                                        transform: translateY(0);
+                                    }
+
+                                    /* Se mantiene quieto hasta el siguiente salto */
+                                }
+
+                                @keyframes floatDiagonalLeft {
+                                    0% {
+                                        opacity: 0;
+                                        transform: translate(0, 0) scale(0.5) rotate(0deg);
+                                    }
+
+                                    50% {
+                                        opacity: 1;
+                                        transform: translate(-15px, -15px) scale(1) rotate(-180deg);
+                                    }
+
+                                    100% {
+                                        opacity: 0;
+                                        transform: translate(-30px, -30px) scale(0.5) rotate(-360deg);
+                                    }
+                                }
+
+                                @keyframes floatUp {
+                                    0% {
+                                        opacity: 0;
+                                        transform: translateY(0) scale(0.5) rotate(0deg);
+                                    }
+
+                                    50% {
+                                        opacity: 1;
+                                        transform: translateY(-20px) scale(1.2) rotate(180deg);
+                                    }
+
+                                    100% {
+                                        opacity: 0;
+                                        transform: translateY(-40px) scale(0.5) rotate(360deg);
+                                    }
+                                }
+
+                                @keyframes floatDiagonalRight {
+                                    0% {
+                                        opacity: 0;
+                                        transform: translate(0, 0) scale(0.5) rotate(0deg);
+                                    }
+
+                                    50% {
+                                        opacity: 1;
+                                        transform: translate(15px, -15px) scale(1) rotate(180deg);
+                                    }
+
+                                    100% {
+                                        opacity: 0;
+                                        transform: translate(30px, -30px) scale(0.5) rotate(360deg);
+                                    }
+                                }
+
+                                @keyframes cartBounce {
+
+                                    0%,
+                                    100% {
+                                        transform: translateY(0);
+                                    }
+
+                                    50% {
+                                        transform: translateY(-3px);
+                                    }
+                                }
+
+                                .cart-view-btn {
+
+                                    color: white;
+                                    padding: 12px 28px;
+                                    border: none;
+                                    border-radius: 30px;
+                                    font-family: 'Open Sans', sans-serif;
+                                    font-size: 15px;
+                                    font-weight: 600;
+                                    cursor: pointer;
+                                    transition: all 0.3s ease;
+                                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                                    position: relative;
+                                }
+
+                                .cart-view-btn:hover {
+                                    background-color: #3d7ba9;
+                                    transform: translateY(-2px);
+
+                                }
+
+                                .cart-view-btn:hover i {
+                                    animation: cartBounce 0.5s ease infinite;
+                                }
+
+                                .cart-view-btn::before,
+                                .cart-view-btn::after,
+                                .cart-view-btn span::before {
+                                    position: absolute;
+                                    color: #4F95CD;
+                                    font-size: 20px;
+                                    pointer-events: none;
+                                    opacity: 0;
+                                    text-shadow: 0 0 10px rgba(79, 149, 205, 0.5);
+                                }
+
+                                .cart-view-btn::before {
+                                    content: '\1FAA5';
+                                    /* Cepillo de dientes */
+                                    left: 40%;
+                                    top: 50%;
+                                }
+
+                                .cart-view-btn::after {
+                                    content: '\1F9FC';
+                                    /* Pasta de dientes */
+                                    left: 50%;
+                                    top: 50%;
+                                }
+
+                                .cart-view-btn span::before {
+                                    content: '\1F9EA';
+                                    /* Enjuague bucal */
+                                    left: 60%;
+                                    top: 50%;
+                                }
+
+                                .cart-view-btn:hover::before {
+                                    animation: floatDiagonalLeft 1s ease-out;
+                                }
+
+                                .cart-view-btn:hover::after {
+                                    animation: floatUp 1s ease-out;
+                                }
+
+                                .cart-view-btn:hover span::before {
+                                    animation: floatDiagonalRight 1s ease-out;
+                                }
+                            </style>
+
+                            <script>
+                                function animateCart() {
+                                    const btn = document.querySelector('.cart-view-btn');
+                                    btn.style.transform = 'scale(1.05)';
+                                    setTimeout(() => {
+                                        btn.style.transform = 'scale(1)';
+                                    }, 200);
+                                }
+                            </script>
+
+
+                            <a href="registro.php"><button class="compra"><i class="fa fa-solid fa-money-bill"></i>
+                                    Paga</button></a>
+                            <button onclick="cerrarSesion()">
+                                <span><i class="fa fa-solid fa-door-open"></i></span>
+
+                            </button>
+
+                            <style>
+                                @keyframes floatDiagonalLeft {
+                                    0% {
+                                        opacity: 0;
+                                        transform: translate(0, 0) scale(0.5) rotate(0deg);
+                                    }
+
+                                    50% {
+                                        opacity: 1;
+                                        transform: translate(-15px, -15px) scale(1) rotate(-180deg);
+                                    }
+
+                                    100% {
+                                        opacity: 0;
+                                        transform: translate(-30px, -30px) scale(0.5) rotate(-360deg);
+                                    }
+                                }
+
+                                @keyframes floatUp {
+                                    0% {
+                                        opacity: 0;
+                                        transform: translateY(0) scale(0.5) rotate(0deg);
+                                    }
+
+                                    50% {
+                                        opacity: 1;
+                                        transform: translateY(-20px) scale(1.2) rotate(180deg);
+                                    }
+
+                                    100% {
+                                        opacity: 0;
+                                        transform: translateY(-40px) scale(0.5) rotate(360deg);
+                                    }
+                                }
+
+                                @keyframes floatDiagonalRight {
+                                    0% {
+                                        opacity: 0;
+                                        transform: translate(0, 0) scale(0.5) rotate(0deg);
+                                    }
+
+                                    50% {
+                                        opacity: 1;
+                                        transform: translate(15px, -15px) scale(1) rotate(180deg);
+                                    }
+
+                                    100% {
+                                        opacity: 0;
+                                        transform: translate(30px, -30px) scale(0.5) rotate(360deg);
+                                    }
+                                }
+
+                                @keyframes cartBounce {
+
+                                    0%,
+                                    100% {
+                                        transform: translateY(0);
+                                    }
+
+                                    50% {
+                                        transform: translateY(-3px);
+                                    }
+                                }
+
+                                @keyframes waveEffect {
+                                    0% {
+                                        transform: rotate(0deg);
+                                    }
+
+                                    50% {
+                                        transform: rotate(10deg);
+                                    }
+
+                                    100% {
+                                        transform: rotate(0deg);
+                                    }
+                                }
+
+                                .cart-view-btn {
+
+                                    color: white;
+                                    padding: 12px 28px;
+                                    border: none;
+                                    border-radius: 30px;
+                                    font-family: 'Open Sans', sans-serif;
+                                    font-size: 15px;
+                                    font-weight: 600;
+                                    cursor: pointer;
+                                    transition: all 0.3s ease;
+                                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                                    position: relative;
+                                }
+
+                                .cart-view-btn:hover {
+                                    background-color: #3d7ba9;
+                                    transform: translateY(-2px);
+                                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+                                }
+
+                                .cart-view-btn:hover i {
+                                    animation: cartBounce 0.5s ease infinite;
+                                }
+
+                                .cart-view-btn::before,
+                                .cart-view-btn::after,
+                                .cart-view-btn span::before {
+                                    position: absolute;
+                                    color: #4F95CD;
+                                    font-size: 20px;
+                                    pointer-events: none;
+                                    opacity: 0;
+                                    text-shadow: 0 0 10px rgba(79, 149, 205, 0.5);
+                                }
+
+                                .cart-view-btn::before {
+                                    content: '\1FAA5';
+                                    /* Cepillo de dientes */
+                                    left: 40%;
+                                    top: 50%;
+                                }
+
+                                .cart-view-btn::after {
+                                    content: '\1F9FC';
+                                    /* Pasta de dientes */
+                                    left: 50%;
+                                    top: 50%;
+                                }
+
+                                .cart-view-btn span::before {
+                                    content: '\1F9EA';
+                                    /* Enjuague bucal */
+                                    left: 60%;
+                                    top: 50%;
+                                }
+
+                                .cart-view-btn:hover::before {
+                                    animation: floatDiagonalLeft 1s ease-out;
+                                }
+
+                                .cart-view-btn:hover::after {
+                                    animation: floatUp 1s ease-out;
+                                }
+
+                                .cart-view-btn:hover span::before {
+                                    animation: floatDiagonalRight 1s ease-out;
+                                }
+
+                                .compra i {
+                                    display: inline-block;
+                                    animation: waveEffect 1s infinite ease-in-out;
+                                }
+                            </style>
+
+                            <script>
+                                function animateCart() {
+                                    const btn = document.querySelector('.cart-view-btn');
+                                    btn.style.transform = 'scale(1.05)';
+                                    setTimeout(() => {
+                                        btn.style.transform = 'scale(1)';
+                                    }, 200);
+                                }
+                            </script>
+
+                        </div>
+                        <li class="dropdown">
+                            <a href="index.html" class="active"><i class="fas fa-home"></i> INICIO</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="comprar.html" class="dropbtn"><i class="fas fa-sharp fa-solid fa-store"></i>
+                                PRODUCTOS <a href="#" style="float: right;" id="portal"><i
+                                        class='fas fa-angle-down'></i></a></a>
+                            <div class="dropdown-content">
+                                <div class="NUEVOLISTADO">
+
+                                    <button class="tablink" id="tablink" onclick="abrirCategoria(event, 'Cepillos')"
+                                        id="defaultOpen">CEPILLO DENTAL</button>
+                                    <button class="tablink" id="tablink" onclick="abrirCategoria(event, 'Sedas')">SEDA
+                                        DENTAL</button>
+                                    <button class="tablink" id="tablink" onclick="abrirCategoria(event, 'Kit')">KIT
+                                        VIAJERO</button>
+                                    <button class="tablink" id="tablink" onclick="abrirCategoria(event, 'Cremas')">CREMA
+                                        DENTAL</button>
+                                    <button class="tablink" id="tablink"
+                                        onclick="abrirCategoria(event, 'Enjuagues')">ENJUAGE BUCAL</button>
+                                    <button class="tablink" id="tablink"
+                                        onclick="abrirCategoria(event, 'Ortodoncia')">ORTODONCIA</button>
+                                    <button class="tablink" id="tablink"
+                                        onclick="abrirCategoria(event, 'Universo')">UNIVERSO DE LOS NIÑOS</button>
+
+
+
+                                </div>
+                            </div>
+                        <li class="dropdown"><a href="http://sky-teeth.com" class="active"><i
+                                    class="fas fa-sharp fa-solid fa-building"></i> SKY-TEETH</a></li>
+                        <li class="dropdown"><a href="mayoristahtml/mayorista.html" class="active" target=" _blank "><i
+                                    class="fas fa-sharp fa-solid fa-tooth"></i> MAYORISTA</a></li>
+                        <li class="dropdown"><a href="quienessomos.html" class="active"><i
+                                    class="fas fa-sharp fa-solid fa-users"></i> QUIENES SOMOS</a></li>
+                        <li class="dropdown">
+                            <a href="contactenos.html" class="active"><i class="fas fa-solid fa-phone"
+                                    style=" transform: scaleX(-1);"></i> CONTACTENOS <a href="#" style="float: right;"
+                                    id="portal"><i class='fas fa-angle-down'></i></a></a>
+                            <div class="dropdown-content">
+                                <a href="https://capacitacionesplus.jimdofree.com/" target="_blank">Academia</a>
+                                <a href="empleo.html">Trabaja con nosotros</a>
+                                <a href="https://forms.gle/iiKwCxTXgCL2CkR4A">PQRS</a>
+                                <a href="cliente.php" target="_blank">PORTAL AUTOGESTION</a>
+
+
+                            </div>
+                        </li>
+                        <li class="dropdown" id="portal">
+                            <a href="cliente.php" class="active">
+                                <i class="fas fa-solid fa-clipboard"></i> PORTAL AUTOGESTION</a>
+                        </li>
+
+                        <div class="redes">
+
+
+
+                            <a href="https://www.facebook.com/oralpluscol/">
+                                <img src="imginicio/icons9-facebook.gif" alt="" width="35px" height="35px"
+                                    style="margin-top: 6%;"></a>
+                            <a href="https://www.youtube.com/channel/UCX-NMQveLomTmNPBkZzjHkw">
+                                <img src="imginicio/icons9-youtube.gif" alt="" width="35px" height="35px"
+                                    style="margin-top: 6%;"></a>
+                            <a href="https://www.instagram.com/oralplus_colombia/">
+                                <img src="imginicio/icons8-instagram.gif" alt="" width="35px" height="35px"
+                                    style="margin-top: 6%;"></a>
+                            <a href="ABCdelcuidadooralinfantil.html">
+                                <img src="imginicio/icons8-blogger-200.png" alt="" width="35px" height="35px"
+                                    style="margin-top: 6%;"></a>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <style>
+            header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 1000;
+                /* Adjust this value as needed to ensure it's above other elements */
+            }
+        </style>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="negro">
+            <div class="productos">
+                <h2 class="tituloproducto" id="productos">Nuestros Productos</h2>
+            </div>
+        </div>
+        <br><br>
+        <center>
+            <div class="Button-movil">
+
+                <button onclick="mostrarCarrito()" class="btn-carrito">
+                    <i class="fa fa-shopping-cart"></i> Ver Carrito (<span id="contador-carrito-duplicado">0</span>)
+                </button>
+                
+                <a href="registro.php"><button class="compra"><i class="fa fa-solid fa-money-bill"></i> Paga
+                    </button></a>
+                <button onclick="cerrarSesion()">
+                    <span><i class="fa fa-solid fa-door-open"></i></span>
+
+                </button>
+                <style>
+                    .btn-carrito {
+                        background-color: #004C97;
+                  
+                    }
+
+                  
+                    .btn-carrito:hover {
+                        background-color: #003A73;
+                        transform: scale(1.05);
+                    }
+                </style>
+            </div>
+        </center>
+        <br> <br><br><br>
+        <center>
+            <!-- Pestañas de categorías -->
+            <div class="tabs">
+                <button class="tablink" onclick="abrirCategoria(event, 'Cepillos')" id="defaultOpen">CEPILLO
+                    DENTAL</button>
+                <button class="tablink" onclick="abrirCategoria(event, 'Sedas')">SEDA DENTAL</button>
+                <button class="tablink" onclick="abrirCategoria(event, 'Kit')">KIT VIAJERO</button>
+                <button class="tablink" onclick="abrirCategoria(event, 'Cremas')">CREMA DENTAL</button>
+                <button class="tablink" onclick="abrirCategoria(event, 'Enjuagues')">ENJUAGE BUCAL</button>
+                <button class="tablink" onclick="abrirCategoria(event, 'Ortodoncia')">ORTODONCIA</button>
+                <button class="tablink" onclick="abrirCategoria(event, 'Universo')">UNIVERSO DE LOS NIÑOS</button>
+
+            </div>
+
+        </center>
+        <div id="productos" class="contenedor">
+            <div id="Cepillos" class="tabcontent grid"></div>
+            <div id="Sedas" class="tabcontent grid" style="display:none;"></div>
+            <div id="Kit" class="tabcontent grid" style="display:none;"></div>
+            <div id="Cremas" class="tabcontent grid" style="display:none;"></div>
+            <div id="Enjuagues" class="tabcontent grid" style="display:none;"></div>
+            <div id="Ortodoncia" class="tabcontent grid" style="display:none;"></div>
+            <div id="Universo" class="tabcontent grid" style="display:none;"></div>
+        </div>
+
+        <!-- Modal del carrito -->
+        <div id="modal-carrito" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarCarrito()">&times;</span>
+                <img src="imginicio/logosas.png" class="logo-carrito" alt="Logo">
+                <h2 class="titulo-carrito">Tu Carrito</h2>
+
+                <div id="productos-carrito"></div>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const productos = JSON.parse(sessionStorage.getItem('carrito')) || [];
+                        const contenedor = document.getElementById('productos-carrito');
+
+                        let subtotal = 0;
+                        contenedor.innerHTML = ""; // Limpia antes de añadir productos
+
+                        productos.forEach(producto => {
+                            const item = document.createElement('div');
+                            item.classList.add('producto');
+
+                            item.innerHTML = `
+            <div class="producto-item">
+                <img src="${producto.imagen}" alt="${producto.nombre}" style="width: 100px; height: 100px;">
+                <h3>${producto.nombre}</h3>
+                <p>Cantidad: ${producto.cantidad}</p>
+                <p>Precio: $${producto.precio.toFixed(2)}</p>
+                <button onclick="eliminarProducto('${producto.id}')">Eliminar</button>
+            </div>
+        `;
+
+                            contenedor.appendChild(item);
+                            subtotal += producto.precio * producto.cantidad;
+                        });
+
+                        const descuento = subtotal * 0.03;
+                        const iva = (subtotal - descuento) * 0.16;
+                        const total = subtotal - descuento + iva;
+
+                        document.getElementById('total-carrito').textContent = `$${subtotal.toFixed(2)}`;
+                        document.getElementById('total-comision').textContent = `$${descuento.toFixed(2)}`;
+                        document.getElementById('total-iva').textContent = `$${iva.toFixed(2)}`;
+                        document.getElementById('total-incluido').textContent = `$${total.toFixed(2)}`;
+                    });
+
+                    function eliminarProducto(id) {
+                        let productos = JSON.parse(sessionStorage.getItem('carrito')) || [];
+                        productos = productos.filter(producto => producto.id !== id);
+                        sessionStorage.setItem('carrito', JSON.stringify(productos));
+
+                        actualizarCarrito();
+                    }
+
+                    function actualizarCarrito() {
+                        const productos = JSON.parse(sessionStorage.getItem('carrito')) || [];
+                        const contenedor = document.getElementById('productos-carrito');
+
+                        contenedor.innerHTML = ""; // Limpia antes de añadir productos
+                        let subtotal = 0;
+
+                        productos.forEach(producto => {
+                            const item = document.createElement('div');
+                            item.classList.add('producto');
+
+                            item.innerHTML = `
+            <div class="producto-item">
+                <img src="${producto.imagen}" alt="${producto.nombre}" style="width: 100px; height: 100px;">
+                <h3>${producto.nombre}</h3>
+                <p>Cantidad: ${producto.cantidad}</p>
+                <p>Precio: $${producto.precio.toFixed(2)}</p>
+                <button onclick="eliminarProducto('${producto.id}')">Eliminar</button>
+            </div>
+        `;
+
+                            contenedor.appendChild(item);
+                            subtotal += producto.precio * producto.cantidad;
+                        });
+
+                        const descuento = subtotal * 0.03;
+                        const iva = (subtotal - descuento) * 0.16;
+                        const total = subtotal - descuento + iva;
+
+                        document.getElementById('total-carrito').textContent = `$${subtotal.toFixed(2)}`;
+                        document.getElementById('total-comision').textContent = `$${descuento.toFixed(2)}`;
+                        document.getElementById('total-iva').textContent = `$${iva.toFixed(2)}`;
+                        document.getElementById('total-incluido').textContent = `$${total.toFixed(2)}`;
+                    }
+
+                </script>
+
+
+                <div class="resumen">
+                    <div class="fila">
+                        <p class="etiqueta">Subtotal:</p> <span class="valor" id="total-carrito">0</span>
+                    </div>
+                    <hr class="linea">
+                    <div class="fila">
+                        <p class="etiqueta">Descuento aplicado del 3%:</p>
+                        <p class="valor" id="total-comision">0</p>
+                    </div>
+                    <hr class="linea">
+                    <div class="fila">
+                        <p class="etiqueta">IVA:</p>
+                        <p class="valor" id="total-iva">0</p>
+                    </div>
+                    <hr class="linea">
+                    <div class="fila">
+                        <p class="etiqueta">Total IVA incluido:</p>
+                        <p class="valor" id="total-incluido">0</p>
+                    </div>
+                </div>
+
+                <button class="btn seguir" onclick="cerrarCarrito()" style="border: 2px solid #000;">Seguir
+                    comprando</button>
+
+                <button class="btn finalizar" onclick="mostrarFormularioCompra()">Finalizar la compra</button>
+            </div>
+        </div>
+
+        <style>
+            /* Estilos generales */
+            .modal-content {
+                background: #ffffff;
+                padding: 20px;
+                border-radius: 12px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                max-width: 400px;
+                margin: auto;
+                animation: fadeIn 0.3s ease-in-out;
+            }
+
+            .close {
+                font-size: 24px;
+                cursor: pointer;
+                position: absolute;
+                right: 15px;
+                top: 10px;
+                color: #333;
+                transition: color 0.3s ease-in-out;
+            }
+
+            .close:hover {
+                color: #000;
+            }
+
+            .logo-carrito {
+                width: 120px;
+                margin-bottom: 10px;
+            }
+
+            .titulo-carrito {
+                font-size: 18px;
+                font-weight: bold;
+                color: #333;
+                margin-bottom: 15px;
+            }
+
+            /* Estilos de los productos */
+            .productos-container {
+                max-height: 250px;
+                overflow-y: auto;
+                padding: 10px;
+                border-radius: 8px;
+                background: #f9f9f9;
+                margin-bottom: 15px;
+            }
+
+            .producto {
+                display: flex;
+                align-items: center;
+                padding: 8px;
+                background: #fff;
+                border-radius: 8px;
+                margin-bottom: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                transition: transform 0.2s ease-in-out;
+            }
+
+            .producto:hover {
+                transform: scale(1.02);
+            }
+
+            .producto-info {
+                display: flex;
+                align-items: center;
+                width: 100%;
+            }
+
+            .producto-img {
+                width: 50px;
+                height: 50px;
+                border-radius: 5px;
+                margin-right: 10px;
+            }
+
+            .producto-detalle {
+                flex-grow: 1;
+                text-align: left;
+            }
+
+            .producto-nombre {
+                font-size: 14px;
+                font-weight: bold;
+                color: #333;
+                margin: 0;
+            }
+
+            .producto-precio {
+                font-size: 22px;
+                font-weight: 700;
+
+                /* Un dorado elegante */
+                margin: 12px 0;
+                padding: 8px 15px;
+                display: inline-block;
+                position: relative;
+                letter-spacing: 1px;
+                border-radius: 12px;
+                background: linear-gradient(135deg, rgba(26, 19, 121, 0.322), rgba(0, 61, 122, 0.15));
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+                transition: transform 0.2s ease-in-out;
+            }
+
+            .producto-precio:hover {
+                transform: scale(1.05);
+            }
+
+            .producto-precio::before {
+
+                font-size: 16px;
+                font-weight: 600;
+                margin-right: 5px;
+                opacity: 0.9;
+            }
+
+
+            /* Resumen del carrito */
+            .resumen {
+                padding: 10px;
+                background: #f0f0f0;
+                border-radius: 8px;
+                margin-bottom: 15px;
+            }
+
+            .fila {
+                display: flex;
+                justify-content: space-between;
+                padding: 5px 0;
+            }
+
+            .etiqueta {
+                font-weight: bold;
+                color: #555;
+            }
+
+            .valor {
+                font-weight: bold;
+                color: #222;
+            }
+
+            .linea {
+                border: 0;
+                height: 1px;
+                background: #ddd;
+                margin: 5px 0;
+            }
+
+            /* Botones */
+            .btn {
+                width: 100%;
+                padding: 12px;
+                margin-top: 10px;
+                border: none;
+                border-radius: 8px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .seguir {
+                background: #f0f0f0;
+                color: #333;
+            }
+
+            .seguir:hover {
+                background: #ddd;
+            }
+
+            .finalizar {
+                background: #000;
+                color: #fff;
+            }
+
+            .finalizar:hover {
+                background: #333;
+            }
+
+            /* Animaciones */
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(-10px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
+
+        <!-- Modal structure -->
+        <div id="error-overlay"
+            style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); justify-content: center; align-items: center;">
+            <div
+                style="background-color: white; padding: 20px; border-radius: 10px; width: 300px; text-align: center; box-sizing: border-box;">
+                <p id="error-message" style="color: #000000; font-size: 15px; font-family: 'Poppins';"></p>
+                <button onclick="closeOverlay()"
+                    style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px;">
+                    Cerrar</button>
+            </div>
+        </div>
+
+        <script>
+            function closeOverlay() {
+                let errorMessage = document.getElementById("error-message").innerText;
+                let errorOverlay = document.getElementById("error-overlay");
+
+                if (errorMessage.includes("Orden creada, pero hubo un error al enviar el correo.")) {
+                    // Si hubo un error al enviar el correo pero la orden se creó, recarga la página
+                    location.reload();
+                } else if (errorMessage.includes("Error: No se pudo conectar a SAP.")) {
+                    // Si hubo un error de conexión con SAP, solo cerramos el modal
+                    errorOverlay.style.display = "none";
+                } else {
+                    // En cualquier otro caso, también cerramos el modal
+                    errorOverlay.style.display = "none";
+                }
+            }
+        </script>
+
+        <div id="cargando"
+            style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); justify-content: center; align-items: center; z-index: 9999; flex-direction: column;">
+            <img src="imginicio/ENVIAR.gif" alt="Cargando..." style="width: 100px; height: 100px;">
+            <br>
+            <span style="font-size: 20px; color: white;">
+                Cargando
+                <span class="punto" style="display: inline-block; animation: ola 1.5s infinite ease-in-out;">.</span>
+                <span class="punto"
+                    style="display: inline-block; animation: ola 1.5s infinite ease-in-out 0.2s;">.</span>
+                <span class="punto"
+                    style="display: inline-block; animation: ola 1.5s infinite ease-in-out 0.4s;">.</span>
+            </span>
+            <style>
+                @keyframes ola {
+
+                    0%,
+                    60%,
+                    100% {
+                        transform: translateY(0);
+                    }
+
+                    30% {
+                        transform: translateY(-10px);
+                    }
+                }
+            </style>
+        </div>
+        <style>
+            @keyframes float {
+
+                0%,
+                100% {
+                    transform: translateY(0);
+                }
+
+                50% {
+                    transform: translateY(-5px);
+                }
+            }
+
+            .error-overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+                justify-content: center;
+                align-items: center;
+                z-index: 9999;
+                backdrop-filter: blur(4px);
+            }
+
+            .error-content {
+                background-color: white;
+                padding: 40px 30px;
+                border-radius: 15px;
+                width: 350px;
+                text-align: center;
+                position: relative;
+                overflow: hidden;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            }
+
+            .dental-icons {
+                position: relative;
+                height: 60px;
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .dental-icons img {
+                max-width: 100%;
+                max-height: 100%;
+                animation: float 3s ease-in-out infinite;
+            }
+
+            .error-message {
+                color: #333333;
+                font-size: 16px;
+                font-family: 'Poppins', sans-serif;
+                margin: 25px 0;
+                line-height: 1.5;
+            }
+
+            .close-button {
+                padding: 12px 28px;
+                background-color: #005BAA;
+                color: white;
+                border: none;
+                border-radius: 8px;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .close-button:hover {
+                background-color: #004388;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(0, 91, 170, 0.2);
+            }
+        </style>
+
+        <div id="error-overlay2" class="error-overlay">
+            <div class="error-content">
+                <div class="dental-icons">
+                    <img src="imginicio/logosas.png" alt="Logo">
+                </div>
+                <p id="error-message2" class="error-message"></p>
+                <button class="close-button"
+                    onclick="document.getElementById('error-overlay2').style.display = 'none';">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+ 
+
+        <style>
+            @keyframes brush {
+                0% {
+                    transform: translate(0, 0) rotate(0deg);
+                }
+
+                25% {
+                    transform: translate(15px, 15px) rotate(90deg);
+                }
+
+                50% {
+                    transform: translate(30px, 0) rotate(180deg);
+                }
+
+                75% {
+                    transform: translate(15px, -15px) rotate(270deg);
+                }
+
+                100% {
+                    transform: translate(0, 0) rotate(360deg);
+                }
+            }
+
+            @keyframes squeeze {
+
+                0%,
+                100% {
+                    transform: scaleX(1);
+                }
+
+                50% {
+                    transform: scaleX(0.8);
+                }
+            }
+        </style>
+
+
+
+
+
+
+
+        <!-- Modal para el formulario de compra -->
+        <!-- Modal -->
+        <div id="formulario-compra" class="modal">
+            <div class="modal-content2">
+                <span class="close" id="cerrarModal">&times;</span>
+                <h2 class="ingresa">Ingresa tus datos para la compra</h2>
+                <br><br>
+                <input type="text" id="cedula" placeholder="Código" required>
+                <input type="text" id="nombre" placeholder="Nombre (AUTOMATICO)" required readonly>
+                <input type="email" id="correo" placeholder="Correo (AUTOMATICO)" required readonly>
+                <input type="text" id="direccion" placeholder="Dirección (AUTOMATICO)" required readonly>
+                <input type="text" id="telefono" placeholder="Teléfono (AUTOMATICO)" required readonly>
+
+                <br><br><br><br>
+                <button class="continuar" onclick="enviarCompra()">
+                    <i class="fas fa-shopping-bag fa"></i> Finalizar Compra
+                </button>
+
+                <style>
+                    .continuar {
+                        position: relative;
+                        padding: 10px 20px;
+                        background-color: #4CAF50;
+                        color: white;
+                        border: none;
+                        font-size: 16px;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease;
+                    }
+
+                    .continuar:hover {
+                        background-color: #45a049;
+                        /* Cambia el color de fondo cuando se pasa el mouse */
+                    }
+
+                    .continuar i {
+                        display: inline-block;
+                        animation: saltar 0.5s infinite;
+                        /* El ícono saltará siempre */
+                    }
+
+                    @keyframes saltar {
+
+                        0%,
+                        100% {
+                            transform: translateY(0);
+                        }
+
+                        50% {
+                            transform: translateY(-10px);
+                            /* Salta 10px */
+                        }
+                    }
+                </style>
+
+            </div>
+        </div>
+
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var modal = document.getElementById('formulario-compra');
+                var closeModal = document.getElementById('cerrarModal');
+
+                function cerrarFormularioCompra() {
+                    if (modal) {
+                        modal.style.display = 'none';
+                        document.body.classList.remove('modal-open'); // Eliminar clase que bloquea scroll
+                        document.body.style.overflow = 'auto'; // Habilitar scroll de nuevo
+                    }
+                }
+
+                // Cerrar modal con la X
+                closeModal.addEventListener('click', cerrarFormularioCompra);
+
+                // Cerrar modal si se hace clic fuera de él
+
+            });
+        </script>
+
+
+
+
+
+
+
+
+
+        <script src="compras.js"></script>
+
+        <!--Boton flecha-->
+        <button class="up-button" onclick="scrollToProducts()">
+            <i class="arrow"></i>
+        </button>
+        <script>
+            function scrollToProducts() {
+                const target = document.getElementById('productos'); // Usamos el ID para asegurar compatibilidad
+                target.scrollIntoView({ behavior: 'smooth' }); // Desplazamiento suave
+            }
+        </script>
+
+
+
+        <!---FOOTER-->
+
+        <footer class="gris">
+            <div style="background-color: #212529; color: #ffffff; 	font-size: 15px;">
+                <div style="background-color: #212529; color: #ffffff; padding:15px; text-align-last: center;">
+
+                </div>
+                <div class="videodescripcion4">
+                    <div style="overflow: auto">
+
+                        <div class="menu">
+
+                            <h3>SUSCRÍBETE</h3>
+
+
+                            <p>Manténgase al día con las características y la <br> tecnología de nuestros productos en
+                                constante<br> evolución. Ingrese su dirección de correo electrónico y <br> suscríbase a
+                                nuestro boletín.</p>
+
+                            <span class="wpcf7-form-control-wrap your-email">
+                                <input type="email" name="your-email" value="" size="40"
+                                    class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control wysija-input"
+                                    aria-required="true" aria-invalid="false" placeholder="Correo electrónico"><input
+                                    type="submit" name="yo" value="Enviar" size="40" class="BOTTON">
+                            </span>
+
+                        </div>
+
+
+                        <div class="principal">
+                            <h3>CONTÁCTANOS</h3>
+                            <p> <img src="contactenos/direccion.png" alt=""> Carrera 54 n. 29-45 Medellín, Colombia</p>
+                            <p><img src="contactenos/what.png" alt=""> (604) 444 4711</p>
+                            <p><img src="contactenos/emailpie.png" alt=""> ventas@oral-plus.com</p>
+                            <p><img src="contactenos/relojpie.png" alt=""> Lunes a Viernes 7:00 AM - 5:00 PM</p>
+                        </div>
+
+                        <div class="derecha">
+                            <h3>SÍGUENOS</h3>
+                            <a href="https://www.facebook.com/oralpluscol/"> <img src="imginicio/facebookpie.png"
+                                    alt=""></a>
+                            <a href="https://www.instagram.com/oralplus_colombia/"> <img src="imginicio/youtubepie.png"
+                                    alt=""></a>
+                            <a href="https://www.youtube.com/channel/UCX-NMQveLomTmNPBkZzjHkw"><img
+                                    src="imginicio/instagrampie.png" alt=""></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <div class="bajopie">
+
+            <div class="videodescripcion4">
+                <div class="footer-copyright">
+                    <img src="imginicio/logosky.png" style="display:inline-block;"> © Copyright 2021. SKY S.A All Rights
+                    Reserved.
+                </div>
+                <div class="politica">
+
+                    <a href="politica.html">
+                        <p> Política y privacidad</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Contenido que se muestra sin verificación -->
+    <div id="contenido-sin-verificar">
+        <header>
+            <input type="checkbox" id="btn-menuencabezado1">
+            <label for="btn-menuencabezado1"><img src="imginicio/icons8-menu-60.png" alt="" width="30px">
+            </label><img src="imginicio/logosas.png" alt="" class="logosas" llammar>
+
+            <nav class="menuencabezado1">
+
+                <div class="videodescripcion4">
+                    <ul>
+
+                        <img src="imginicio/logosas.png" alt="" class="logo" llammar>
+                        <div class="telefono"><i class="fa fa-microphone"></i> LLAMANOS <a
+                                style="text-decoration: none; color: rgb(119, 119, 119);" href="tel:+6044444711"> (604)
+                                444 4711 </a>- 3009121246
+
+
+                            <style>
+                                @keyframes floatDiagonalLeft {
+                                    0% {
+                                        opacity: 0;
+                                        transform: translate(0, 0) scale(0.5) rotate(0deg);
+                                    }
+
+                                    50% {
+                                        opacity: 1;
+                                        transform: translate(-15px, -15px) scale(1) rotate(-180deg);
+                                    }
+
+                                    100% {
+                                        opacity: 0;
+                                        transform: translate(-30px, -30px) scale(0.5) rotate(-360deg);
+                                    }
+                                }
+
+                                @keyframes floatUp {
+                                    0% {
+                                        opacity: 0;
+                                        transform: translateY(0) scale(0.5) rotate(0deg);
+                                    }
+
+                                    50% {
+                                        opacity: 1;
+                                        transform: translateY(-20px) scale(1.2) rotate(180deg);
+                                    }
+
+                                    100% {
+                                        opacity: 0;
+                                        transform: translateY(-40px) scale(0.5) rotate(360deg);
+                                    }
+                                }
+
+                                @keyframes floatDiagonalRight {
+                                    0% {
+                                        opacity: 0;
+                                        transform: translate(0, 0) scale(0.5) rotate(0deg);
+                                    }
+
+                                    50% {
+                                        opacity: 1;
+                                        transform: translate(15px, -15px) scale(1) rotate(180deg);
+                                    }
+
+                                    100% {
+                                        opacity: 0;
+                                        transform: translate(30px, -30px) scale(0.5) rotate(360deg);
+                                    }
+                                }
+
+                                @keyframes cartBounce {
+
+                                    0%,
+                                    100% {
+                                        transform: translateY(0);
+                                    }
+
+                                    50% {
+                                        transform: translateY(-3px);
+                                    }
+                                }
+
+                                .cart-view-btn {
+
+                                    color: white;
+                                    padding: 12px 28px;
+                                    border: none;
+                                    border-radius: 30px;
+                                    font-family: 'Open Sans', sans-serif;
+                                    font-size: 15px;
+                                    font-weight: 600;
+                                    cursor: pointer;
+                                    transition: all 0.3s ease;
+                                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                                    position: relative;
+                                }
+
+                                .cart-view-btn:hover {
+                                    background-color: #3d7ba9;
+                                    transform: translateY(-2px);
+                                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+                                }
+
+                                .cart-view-btn:hover i {
+                                    animation: cartBounce 0.5s ease infinite;
+                                }
+
+                                .cart-view-btn::before,
+                                .cart-view-btn::after,
+                                .cart-view-btn span::before {
+                                    position: absolute;
+                                    color: #4F95CD;
+                                    font-size: 20px;
+                                    pointer-events: none;
+                                    opacity: 0;
+                                    text-shadow: 0 0 10px rgba(79, 149, 205, 0.5);
+                                }
+
+                                .cart-view-btn::before {
+                                    content: '\1FAA5';
+                                    /* Cepillo de dientes */
+                                    left: 40%;
+                                    top: 50%;
+                                }
+
+                                .cart-view-btn::after {
+                                    content: '\1F9FC';
+                                    /* Pasta de dientes */
+                                    left: 50%;
+                                    top: 50%;
+                                }
+
+                                .cart-view-btn span::before {
+                                    content: '\1F9EA';
+                                    /* Enjuague bucal */
+                                    left: 60%;
+                                    top: 50%;
+                                }
+
+                                .cart-view-btn:hover::before {
+                                    animation: floatDiagonalLeft 1s ease-out;
+                                }
+
+                                .cart-view-btn:hover::after {
+                                    animation: floatUp 1s ease-out;
+                                }
+
+                                .cart-view-btn:hover span::before {
+                                    animation: floatDiagonalRight 1s ease-out;
+                                }
+                            </style>
+
+                            <script>
+                                function animateCart() {
+                                    const btn = document.querySelector('.cart-view-btn');
+                                    btn.style.transform = 'scale(1.05)';
+                                    setTimeout(() => {
+                                        btn.style.transform = 'scale(1)';
+                                    }, 200);
+                                }
+                            </script>
+
+
+
+
+                            <style>
+                                @keyframes floatDiagonalLeft {
+                                    0% {
+                                        opacity: 0;
+                                        transform: translate(0, 0) scale(0.5) rotate(0deg);
+                                    }
+
+                                    50% {
+                                        opacity: 1;
+                                        transform: translate(-15px, -15px) scale(1) rotate(-180deg);
+                                    }
+
+                                    100% {
+                                        opacity: 0;
+                                        transform: translate(-30px, -30px) scale(0.5) rotate(-360deg);
+                                    }
+                                }
+
+                                @keyframes floatUp {
+                                    0% {
+                                        opacity: 0;
+                                        transform: translateY(0) scale(0.5) rotate(0deg);
+                                    }
+
+                                    50% {
+                                        opacity: 1;
+                                        transform: translateY(-20px) scale(1.2) rotate(180deg);
+                                    }
+
+                                    100% {
+                                        opacity: 0;
+                                        transform: translateY(-40px) scale(0.5) rotate(360deg);
+                                    }
+                                }
+
+                                @keyframes floatDiagonalRight {
+                                    0% {
+                                        opacity: 0;
+                                        transform: translate(0, 0) scale(0.5) rotate(0deg);
+                                    }
+
+                                    50% {
+                                        opacity: 1;
+                                        transform: translate(15px, -15px) scale(1) rotate(180deg);
+                                    }
+
+                                    100% {
+                                        opacity: 0;
+                                        transform: translate(30px, -30px) scale(0.5) rotate(360deg);
+                                    }
+                                }
+
+                                @keyframes cartBounce {
+
+                                    0%,
+                                    100% {
+                                        transform: translateY(0);
+                                    }
+
+                                    50% {
+                                        transform: translateY(-3px);
+                                    }
+                                }
+
+                                @keyframes waveEffect {
+                                    0% {
+                                        transform: rotate(0deg);
+                                    }
+
+                                    50% {
+                                        transform: rotate(10deg);
+                                    }
+
+                                    100% {
+                                        transform: rotate(0deg);
+                                    }
+                                }
+
+                                .cart-view-btn {
+
+                                    color: white;
+                                    padding: 12px 28px;
+                                    border: none;
+                                    border-radius: 30px;
+                                    font-family: 'Open Sans', sans-serif;
+                                    font-size: 15px;
+                                    font-weight: 600;
+                                    cursor: pointer;
+                                    transition: all 0.3s ease;
+                                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                                    position: relative;
+                                }
+
+                                .cart-view-btn:hover {
+                                    background-color: #3d7ba9;
+                                    transform: translateY(-2px);
+                                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+                                }
+
+                                .cart-view-btn:hover i {
+                                    animation: cartBounce 0.5s ease infinite;
+                                }
+
+                                .cart-view-btn::before,
+                                .cart-view-btn::after,
+                                .cart-view-btn span::before {
+                                    position: absolute;
+                                    color: #4F95CD;
+                                    font-size: 20px;
+                                    pointer-events: none;
+                                    opacity: 0;
+                                    text-shadow: 0 0 10px rgba(79, 149, 205, 0.5);
+                                }
+
+                                .cart-view-btn::before {
+                                    content: '\1FAA5';
+                                    /* Cepillo de dientes */
+                                    left: 40%;
+                                    top: 50%;
+                                }
+
+                                .cart-view-btn::after {
+                                    content: '\1F9FC';
+                                    /* Pasta de dientes */
+                                    left: 50%;
+                                    top: 50%;
+                                }
+
+                                .cart-view-btn span::before {
+                                    content: '\1F9EA';
+                                    /* Enjuague bucal */
+                                    left: 60%;
+                                    top: 50%;
+                                }
+
+                                .cart-view-btn:hover::before {
+                                    animation: floatDiagonalLeft 1s ease-out;
+                                }
+
+                                .cart-view-btn:hover::after {
+                                    animation: floatUp 1s ease-out;
+                                }
+
+                                .cart-view-btn:hover span::before {
+                                    animation: floatDiagonalRight 1s ease-out;
+                                }
+
+                                .compra i {
+                                    display: inline-block;
+                                    animation: waveEffect 1s infinite ease-in-out;
+                                }
+                            </style>
+
+                            <script>
+                                function animateCart() {
+                                    const btn = document.querySelector('.cart-view-btn');
+                                    btn.style.transform = 'scale(1.05)';
+                                    setTimeout(() => {
+                                        btn.style.transform = 'scale(1)';
+                                    }, 200);
+                                }
+                            </script>
+
+                        </div>
+                        <li class="dropdown">
+                            <a href="index.html" class="active"><i class="fas fa-home"></i> INICIO</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="comprar.html" class="dropbtn"><i class="fas fa-sharp fa-solid fa-store"></i>
+                                PRODUCTOS <a href="#" style="float: right;" id="portal"><i
+                                        class='fas fa-angle-down'></i></a></a>
+                            <div class="dropdown-content">
+                                <div class="NUEVOLISTADO">
+
+                                    <button class="tablink" id="tablink" onclick="abrirCategoria(event, 'Cepillos')"
+                                        id="defaultOpen">CEPILLO DENTAL</button>
+                                    <button class="tablink" id="tablink" onclick="abrirCategoria(event, 'Sedas')">SEDA
+                                        DENTAL</button>
+                                    <button class="tablink" id="tablink" onclick="abrirCategoria(event, 'Kit')">KIT
+                                        VIAJERO</button>
+                                    <button class="tablink" id="tablink" onclick="abrirCategoria(event, 'Cremas')">CREMA
+                                        DENTAL</button>
+                                    <button class="tablink" id="tablink"
+                                        onclick="abrirCategoria(event, 'Enjuagues')">ENJUAGE BUCAL</button>
+                                    <button class="tablink" id="tablink"
+                                        onclick="abrirCategoria(event, 'Ortodoncia')">ORTODONCIA</button>
+                                    <button class="tablink" id="tablink"
+                                        onclick="abrirCategoria(event, 'Universo')">UNIVERSO DE LOS NIÑOS</button>
+
+
+
+                                </div>
+                            </div>
+                        <li class="dropdown"><a href="http://sky-teeth.com" class="active"><i
+                                    class="fas fa-sharp fa-solid fa-building"></i> SKY-TEETH</a></li>
+                        <li class="dropdown"><a href="mayoristahtml/mayorista.html" class="active" target=" _blank "><i
+                                    class="fas fa-sharp fa-solid fa-tooth"></i> MAYORISTA</a></li>
+                        <li class="dropdown"><a href="quienessomos.html" class="active"><i
+                                    class="fas fa-sharp fa-solid fa-users"></i> QUIENES SOMOS</a></li>
+                        <li class="dropdown">
+                            <a href="contactenos.html" class="active"><i class="fas fa-solid fa-phone"
+                                    style=" transform: scaleX(-1);"></i> CONTACTENOS <a href="#" style="float: right;"
+                                    id="portal"><i class='fas fa-angle-down'></i></a></a>
+                            <div class="dropdown-content">
+                                <a href="https://capacitacionesplus.jimdofree.com/" target="_blank">Academia</a>
+                                <a href="empleo.html">Trabaja con nosotros</a>
+                                <a href="https://forms.gle/iiKwCxTXgCL2CkR4A">PQRS</a>
+                                <a href="cliente.php" target="_blank">PORTAL AUTOGESTION</a>
+
+
+                            </div>
+                        </li>
+                        <li class="dropdown" id="portal">
+                            <a href="cliente.php" class="active">
+                                <i class="fas fa-solid fa-clipboard"></i> PORTAL AUTOGESTION</a>
+                        </li>
+
+                        <div class="redes">
+
+
+
+                            <a href="https://www.facebook.com/oralpluscol/">
+                                <img src="imginicio/icons9-facebook.gif" alt="" width="35px" height="35px"
+                                    style="margin-top: 6%;"></a>
+                            <a href="https://www.youtube.com/channel/UCX-NMQveLomTmNPBkZzjHkw">
+                                <img src="imginicio/icons9-youtube.gif" alt="" width="35px" height="35px"
+                                    style="margin-top: 6%;"></a>
+                            <a href="https://www.instagram.com/oralplus_colombia/">
+                                <img src="imginicio/icons8-instagram.gif" alt="" width="35px" height="35px"
+                                    style="margin-top: 6%;"></a>
+                            <a href="ABCdelcuidadooralinfantil.html">
+                                <img src="imginicio/icons8-blogger-200.png" alt="" width="35px" height="35px"
+                                    style="margin-top: 6%;"></a>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="negro">
+            <div class="productos">
+                <h2 class="tituloproducto">Nuestros Productos </h2>
+            </div>
+        </div>
+
+        <br> <br><br><br>
+        <center>
+            <!-- Pestañas de categorías -->
+            <div class="tabs">
+                <button class="tablink1" onclick="abrirCategoria1(event, 'Cepillos1')" id="defaultOpen1">CEPILLO
+                    DENTAL</button>
+                <button class="tablink1" onclick="abrirCategoria1(event, 'Sedas1')">SEDA DENTAL</button>
+                <button class="tablink1" onclick="abrirCategoria1(event, 'Kit1')">KIT VIAJERO</button>
+                <button class="tablink1" onclick="abrirCategoria1(event, 'Cremas1')">CREMA DENTAL</button>
+                <button class="tablink1" onclick="abrirCategoria1(event, 'Enjuagues1')">ENJUAGE BUCAL</button>
+                <button class="tablink1" onclick="abrirCategoria1(event, 'Ortodoncia1')">ORTODONCIA</button>
+                <button class="tablink1" onclick="abrirCategoria1(event, 'Universo1')">UNIVERSO DE LOS NIÑOS</button>
+
+            </div>
+
+        </center>
+        <center>
+            <div id="productos1" class="contenedor1">
+                <div id="Cepillos1" class="tabcontent1 grid"></div>
+                <div id="Sedas1" class="tabcontent1 grid" style="display:none;"></div>
+                <div id="Kit1" class="tabcontent1 grid" style="display:none;"></div>
+                <div id="Cremas1" class="tabcontent1 grid" style="display:none;"></div>
+                <div id="Enjuagues1" class="tabcontent1 grid" style="display:none;"></div>
+                <div id="Ortodoncia1" class="tabcontent1 grid" style="display:none;"></div>
+                <div id="Universo1" class="tabcontent1 grid" style="display:none;"></div>
+            </div>
+            <script src="comprasin.js"></script>
+
+
+    </div>
+    </center>
+
+
+</body>
+
+</html>

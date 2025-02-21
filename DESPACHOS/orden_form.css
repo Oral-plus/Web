@@ -1,0 +1,95 @@
+header {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+nav {
+    text-align: left; 
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 15px;
+   
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px; /* Espacio entre los enlaces */
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+}
+nav a:hover{
+    background-color: #abc6d8;
+    color: #FFFFFF;
+ 
+border-radius: 15px;
+}
+
+
+
+.logo img{width: 100px; height: 50px;}
+
+
+.cuadro2{background-color:#fff7f1 ;}
+.card-input {
+    background: #abc6d8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    height: 12px;
+    margin-bottom: 10px;
+    font-family: 'Alfa Slab One', cursive; /* Agregamos un margen inferior para separar los campos */
+}
+
+input {
+
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 100%;
+    background: transparent;
+    padding: 5px; /* Añadimos un poco de relleno para que los campos se vean mejor */
+    font-family: 'Alfa Slab One', cursive; /* Agregamos un margen inferior para separar los campos */
+}
+
+label{
+    display: inline-block;
+    width: 120px;
+  }
+
+.cuadro {	max-width: 1306px; 
+display: block;
+margin: auto;}
+
+.blue-line {
+    border: 2px solid #fdbe7b; /* Establece el color de la línea como azul */
+    
+}
+p { font-family: 'Alfa Slab One', cursive;
+font-size: 25px;
+color: #abd881;}
+
+select {
+ 
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 220px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #abc6d8;
+    padding: 5px; /* Añadimos un poco de relleno para que los campos se vean mejor */
+    font-family: 'Alfa Slab One', cursive; /* Agregamos un margen inferior para separar los campos */
+}

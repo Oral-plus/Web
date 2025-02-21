@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /temp/
+Disallow: /docs/
+
+Sitemap: http://www.oral-plus.com/sitemap.xml

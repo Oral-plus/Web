@@ -1,0 +1,137 @@
+/* Estilos generales para el contenedor del menú y la imagen */
+body{background-color: #ccd0d3;}
+.menu-container { 
+    background-color: #afdf83;
+width: 280px;
+      float: left; /* Flota a la izquierda para ocupar solo la mitad */
+      box-sizing: border-box; /* Incluye el espacio del borde en el ancho */
+      position: relative; /* Para posicionar la imagen de manera absoluta */
+  margin: 0;
+    }
+  
+  
+  /* Estilos para la imagen redonda */
+  .round-image {
+      width: 200px; /* Ancho fijo de la imagen */
+      height: 200px; /* Altura fija de la imagen */
+      border-radius: 50%; /* Crea una forma redonda */
+      overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
+      margin-right: 20px; /* Espacio entre la imagen y el menú vertical */
+  display: block;
+  margin: auto;
+    }
+  
+  .round-image img {
+      width: 100%; /* Ajusta la imagen al tamaño del contenedor */
+      height: auto; /* Mantén la relación de aspecto original */
+  }
+  .blue-line {
+    border: 2px solid #2a79c6; /* Establece el color de la línea como azul */
+    
+}
+  /* Estilos generales para el menú desplegable vertical */
+  .menu-vertical ul {
+      list-style: none;
+      padding: 0;
+  }
+  
+  .menu-vertical ul li {
+      position: relative;
+  }
+  
+  .menu-vertical a {
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #333;
+      background-color: #afdf83;
+      border-bottom: 1px solid #ccc;
+  }
+  
+  /* Estilos para el submenú */
+  .menu-vertical .submenu ul {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      background-color: #afdf83;
+  }
+  
+  .menu-vertical .submenu:hover ul {
+      display: block;
+  }
+  
+  /* Estilos adicionales */
+  .menu-vertical a:hover {
+      background-color: #ddd;
+  }
+  
+  .menu-vertical .submenu:hover a {
+      background-color: #f0f0f0;
+  }
+
+
+.menu{
+    max-width: 1366px;
+    display: block;
+    margin: auto;
+}
+  
+  .margen {
+      padding-left: 360px;
+      max-width: 1366px;
+      display: block;
+  
+  }
+  
+  .gallery {
+      float: left;
+      
+      position: none;
+  }
+  a{
+text-decoration: none;
+  }
+  .desc {
+      float: left;
+      text-align: center;
+      color: #46484b;
+      font-family: 'Alfa Slab One', cursive;
+
+      font-size: 16px;
+      width: 160px;
+      height: 60px;
+    
+      padding-left:21px;
+      padding-right: 21px;
+      font-weight: 400;
+  }
+  .desc p {
+ 
+    color: #161616;
+}
+
+  .de {
+      width: 160px;
+      height:  160px;
+      overflow: hidden;
+      background-color: #ffffff;
+     margin-left: 15px;
+   
+     margin-right: 15px;
+  }
+  
+  .de img {
+      width: 100%;
+      height: 100%;
+      transition: 0.5s;
+      object-fit: cover;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+  }
+  
+  img:hover {
+      transform: scale(1.2);
+  }

@@ -1,0 +1,74 @@
+<?php
+
+// Configuración del servidor SAP
+$baseUrl = "https://192.168.2.242:50000/b1s/v1";
+
+// Credenciales de acceso a SAP
+$username = "MANAGER";
+$password = "SKY0303";
+$companyDB = "RBOSKY3";
+
+// Iniciar sesión en SAP
+$loginData = [
+    "UserName" => $username,
+    "Password" => $password,
+    "CompanyDB" => $companyDB
+];
+
+$ch = curl_init("$baseUrl/Login");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($loginData));
+curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+
+$response = curl_exec($ch);
+$httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+if ($httpCode != 200) {
+    die("Error al iniciar sesión ($httpCode): " . $response);
+}
+
+$sessionData = json_decode($response, true);
+$sessionId = $sessionData["SessionId"];
+curl_close($ch);
+
+// Crear la orden de compra
+$orderData = [
+    "CardCode" => "c1000153938",
+    "DocDueDate" => "2025-02-11",
+    "DocumentLines" => [
+        ["ItemCode" => "50360251", "Quantity" => 1],
+        ["ItemCode" => "50360243", "Quantity" => 1],
+        ["ItemCode" => "50360465", "Quantity" => 1],
+        ["ItemCode" => "50360085", "Quantity" => 1],
+        ["ItemCode" => "50340048", "Quantity" => 1],
+        ["ItemCode" => "50340046", "Quantity" => 1],
+        ["ItemCode" => "50360369", "Quantity" => 1],
+        ["ItemCode" => "50360086", "Quantity" => 1],
+        ["ItemCode" => "50340052", "Quantity" => 1],
+        ["ItemCode" => "50340056", "Quantity" => 1],
+        ["ItemCode" => "50360246", "Quantity" => 1],
+        ["ItemCode" => "50340011", "Quantity" => 1],
+        ["ItemCode" => "50340025", "Quantity" => 1]
+    ]
+];
+
+$ch = curl_init("$baseUrl/Orders");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($orderData));
+curl_setopt($ch, CURLOPT_HTTPHEADER, [
+    'Content-Type: application/json',
+    "Cookie: B1SESSION=$sessionId"
+]);
+
+$response = curl_exec($ch);
+$httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+curl_close($ch);
+
+if ($httpCode == 201) {
+    echo "Orden creada exitosamente: " . $response;
+} else {
+    echo "Error al crear la orden: " . $response;
+}
+?>

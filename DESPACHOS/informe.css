@@ -1,0 +1,27 @@
+body {
+   
+    background-color: #fff7f1;
+    text-align: center;
+}
+h1 {
+    color: #333;
+    font-family: 'Alfa Slab One', cursive;
+}
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #8ac058;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
